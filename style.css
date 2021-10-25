@@ -52,13 +52,46 @@
 
 .hamburger{display: none;}
 
-
+#menuquery{display: none;}
+#menuquery>p{display: none;}
 /*FINE MODIFICHE AL MENU*/
 
 
+/*MODIFICHE AL BANNER*/
+.banner{
+    margin-top: 100px;
+    width: 100%;
+}
 
+.containerbanner{
+    margin-left: 100px;
+}
 
+.scrittabanner{
+    font-size: 35px;
+    color: black;
+}
 
+/*fine modifiche al banner*/
+
+/*modifiche al box card*/
+
+.boxcard{
+    width: 100%;
+    border: 1px solid red;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sottofoto{
+    width: 350px;
+    border: 1px solid red;
+}
+
+/*fine modifiche al box card*/
 
 /*MODIFICHE QUERY 500PX*/
 @media screen and (max-width:500px){
@@ -67,5 +100,29 @@
     .hamburger{display: block; color: white; margin-left: 100px; font-size: 35px;}
 
     .logo{font-size: 35px;}
+
+    #menuquery{
+        width: 100%;
+        background-color: purple;
+        flex-direction: column;
+    }
+
+    #menuquery > p{
+        display: block;
+        width: 100%;
+        border: 1px solid white;
+        color: white;
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+    /*fine modifiche al menù*/
+
+
+    /*MODIFICHE AL BANNER*/
+.containerbanner{
+    margin-left: 60px;
+}
+/*fine modifiche al banner*/
 
 }

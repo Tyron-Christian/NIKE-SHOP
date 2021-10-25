@@ -13,21 +13,18 @@
 <body>
 
 
-<div class="menu">
-  <div class="titolo">
-  <p class="logo">NIKE SHOP</p>
-  </div>
 
-    <div class="elementi" id="elementi">
+<div class="menuquery" id="menuquery">
         <p>Nuovi arrivi</p>
         <p>Uomo</p>
         <p>Donna</p>
         <p>Collezioni</p>
-    </div>
-    <p class="hamburger" id="hamburger"><i class="fas fa-bars"></i></p>
-</div>    
+</div>
+    
+    
+ 
        
-<?php require "querymenu.php"?>
+
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

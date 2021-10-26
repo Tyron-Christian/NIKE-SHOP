@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'Sora', sans-serif;
 }
 
 /*MODIFICHE AL MENU*/
@@ -24,7 +27,7 @@
 .logo{
     color: orange;
     font-size: 35px;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
 }
 
@@ -58,38 +61,55 @@
 
 
 /*MODIFICHE AL BANNER*/
-.banner{
-    margin-top: 100px;
-    width: 100%;
-}
-
 .containerbanner{
-    margin-left: 100px;
+    width: 100%;
+    margin-top: 80px;
 }
 
-.scrittabanner{
-    font-size: 35px;
-    color: black;
+.containerbanner > p{
+    margin-left: 70px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /*fine modifiche al banner*/
 
+.containermain{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+}
+
+.aside{
+    width: 200px;
+    height: 1000px;
+    border: 1px solid red;
+}
+
+.card{
+    width: 100%;
+    border: 1px solid yellow;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.boxfoto{
+    width: 300px;
+    height: 350px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+img{ width: 300px;
+    height: 350px;}
+
+.boxfoto > p{
+    font-size: 20px;
+}
+
 /*modifiche al box card*/
 
-.boxcard{
-    width: 100%;
-    border: 1px solid red;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.sottofoto{
-    width: 350px;
-    border: 1px solid red;
-}
 
 /*fine modifiche al box card*/
 
@@ -97,7 +117,7 @@
 @media screen and (max-width:500px){
     .elementi{display: none;}
 
-    .hamburger{display: block; color: white; margin-left: 100px; font-size: 35px;}
+    .hamburger{display: block; color: white; font-size: 35px; margin-left: 70px;}
 
     .logo{font-size: 35px;}
 
@@ -119,10 +139,39 @@
     /*fine modifiche al menù*/
 
 
-    /*MODIFICHE AL BANNER*/
-.containerbanner{
-    margin-left: 60px;
+/*MODIFICHE AL BANNER*/
+
+.containerbanner > p{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
+
 /*fine modifiche al banner*/
+
+.scrittabanner{font-size: 20px;}
+/*fine modifiche al banner*/
+
+/*modifiche alla main page*/
+
+.aside{display: none;}
+
+.boxfoto{
+    width: 170px;
+    height: 190px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+img{ width: 170px;
+    height: 190px;}
+
+    .boxfoto > p{
+        font-size: 17px;
+    }
+    
+
+
+/*fine modifiche alla main page*/
 
 }
